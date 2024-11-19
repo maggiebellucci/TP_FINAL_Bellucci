@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+    <link rel="icon" href="imagenes/logo.png" type="image/png">
+</head>
+
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md py-1 navbar-celeste" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="imagenes/logo.png" alt="Logo Relax" class="me-2" style="height: 30px;"> 
+                <span class="navbar-text">Relax</span> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu">
+                <span class="bi bi-menu-up"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="miMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Redes sociales</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.instagram.com/beachhouseipanema/">Instagram</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <button type="button" class="ms-2 btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#miModal">Contacto</button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <header class="container-fluid bg-secondary"></header>
+
+    
+    <main class="container-md">
+        
+        <img src="imagenes/foto-1.jpg" class="d-block w-100 first-image" alt="Imagen Principal">
+
+        
+        <h1 class="text-center mt-3 small-title">Casas en la playa</h1>
+        <p class="text-center">Una estadía única</p>
+
+       
+        <section class="mt-5">
+            <div class="row text-center">
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="info-box">
+                        <h3 class="text-title">Disfruta de la naturaleza</h3>
+                        <p>Escapa del estrés diario y sumérgete en la tranquilidad que solo el mar puede ofrecer. Disfruta de amaneceres espectaculares, el sonido de las olas y aire puro, todo desde la comodidad de tu hogar temporal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="info-box">
+                        <h3 class="text-title">Espacio ideal para la familia</h3>
+                        <p>Las casas en la playa ofrecen privacidad y amplitud, perfectas para compartir momentos inolvidables con tus seres queridos. Cocina, descansa y crea recuerdos en un entorno único.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 mb-4">
+                    <div class="info-box">
+                        <h3 class="text-title">Entretenimiento al alcance</h3>
+                        <p>Desde deportes acuáticos hasta paseos por la arena al atardecer, alquilar una casa en la playa te pone cerca de experiencias emocionantes. Vive unas vacaciones activas o relajadas según tu estilo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="modal fade" id="miModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Formulario</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="codigo.php" class="needs-validation" method="post" novalidate>
+                            <div>
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" required name="nombre" id="nombre" class="form-control">
+                                <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                            </div>
+                            <div>
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" required name="email" id="email" class="form-control">
+                                <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                            </div>
+                            <button class="btn btn-secondary mt-3">Enviar Formulario</button>
+                        </form>
+                     
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="mt-5 text-center">
+            <h2 class="final-title">Refugios de Ensueño Frente al Mar</h2>
+            <p class="final-subtitle">El lugar perfecto para conectar con el mar y la calma.</p>
+            <div class="row justify-content-center align-items-start mt-4">
+                <div class="col-md-6 col-12 mb-4">
+                    <img src="imagenes/foto-2.jpg" class="img-fluid custom-img img-bottom-right" alt="Imagen 1">
+                </div>
+                <div class="col-md-6 col-12 mb-4">
+                    <img src="imagenes/foto-3.jpeg" class="img-fluid custom-img img-bottom-left" alt="Imagen 2">
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    
+    <footer class="footer-custom">
+        <div class="container-fluid p-0 text-center py-3">
+            <p class="mb-0">© 2024 Relax. Todos los derechos reservados.</p>
+            <p class="mb-0">Diseñado por Magdalena Bellucci.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/codigo.js"></script>
+
+</body>
+</html>
